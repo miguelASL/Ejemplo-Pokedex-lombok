@@ -1,0 +1,9 @@
+version: '3'  # Versión de la sintaxis de Docker Compose
+
+services:
+  pokedex:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    container_name: pokedex_lombok
+    restart: always
